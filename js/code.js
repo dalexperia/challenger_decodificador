@@ -22,26 +22,30 @@ let retornarvalores = () => {
     for (const [, values] of Object.entries(code)){
         regex += '(' + values + ')|';
     }
-
     regex = regex.substring(0, regex.length - 1);
     return new RegExp(regex, "g");
 }
 let encriptar = () => {
     let result = texto.value;
+    if (result === ''){
+        alert('Digite alguma palavra ou texto em minúsculo');
+        return null;
+    }
     document.getElementById('texto-decodificado').value = " ";
     document.getElementById('anterior').innerHTML = " ";
     copiar.style.display = "block";
     document.getElementsByClassName('texto-codificado')[0].innerText = result.replace(/[aeiou]/g, letter => code[letter]);
-    console.log(result.replace(/[aeiou]/g, letter => code[letter]));
 }
 let descriptar = () => {
     let result = texto.value;
+    if (result === ''){
+        alert('Digite alguma palavra ou texto em minúsculo');
+        return null;
+    }
     const regex = retornarvalores();
     document.getElementById('texto-decodificado').value = " ";
     document.getElementsByClassName('texto-codificado')[0].innerText = result.replace(regex, retornarLetra);
-    console.log(result.replace(regex, retornarLetra));
 }
-
 let copiarTexto = () => {
     var content = document.getElementsByClassName('texto-codificado')[0].innerHTML;
 
