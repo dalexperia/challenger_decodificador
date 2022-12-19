@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Decodificador</title>
+</head>
+<body id="body">
+    <header>
+        <div id="header">
+            <img id="img-logo" src="images/logo.png" alt="logo Alura">
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <div id="decodificado">
+                <textarea id="texto-decodificado" placeholder="Digite um texto"></textarea>
+                <div id="botoes">
+                    <p id="alerta">⚠️ Apenas letras minúsculas e sem acento</p>
+                    <input id="encriptar" type="button" value="Encriptar">
+                    <input id="decifrar" type="button" value="Decifrar">
+                </div>
+            </div>
+            <div id="codificado">
+                <div class="texto-codificado"></div>
+                <div id="anterior">
+                    <img id="image-wait" src="images/wait.png" alt="aguardando texto codificado">
+                    <h3 id="aviso">Nenhuma mensagem encontrada</h3>
+                    <p id="mensagem">Digite um texto que voce deseja criptografar.</p>
+                </div>
+                <div id="botao">
+                    <input id="copiar" type="button" value="Copiar" hidden>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script rel="script" type="text/javascript" src="js/code.js"></script>
+</html>
+

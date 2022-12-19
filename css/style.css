@@ -1,0 +1,131 @@
+#body {
+    width: 1440px;
+    text-align: center;
+    background: #F3F5FC;
+    margin: 0 auto;
+}
+
+#header {
+    width: 1000px;
+    margin: 0 auto;
+    padding-left:50px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#img-logo {
+    width: 31px;
+    height: 48px;
+}
+
+#decodificado{
+    position: relative;
+    margin-top: 40px;
+    width: 700px;
+    display: inline-block;
+}
+
+#texto-decodificado {
+    background: #F3F5FC;
+    border: 2px solid #dedddd;
+    border-radius: 10px;
+    width: 90%;
+    height: 400px;
+    resize: none;
+    font-family: Montserrat;
+    font-size: 1.2em;
+    color: #08202d;
+    padding: 20px 20px;
+}
+#alerta{
+    font-size: 0.6em;
+    font-family: Montserrat;
+    text-align: left;
+    margin-left: 187px;
+    margin-top: 10px;
+}
+#codificado {
+    position: relative;
+    border:2px solid #dedddd;
+    width: 300px;
+    height: 470px;
+    border-radius: 10px;
+    display: inline-block;
+    padding-top: 65px;
+    background: white;
+}
+
+#image-wait{
+    position: absolute;
+    width: 200px;
+    right: 40px;
+    margin-top: 50px;
+}
+
+.texto-codificado {
+    position: absolute;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Montserrat;
+}
+
+#aviso {
+    position: absolute;
+    padding: 10px 30px;
+    margin-top: 310px;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Montserrat;
+}
+
+#mensagem {
+    position: absolute;
+    padding: 25px 20px;
+    margin-top: 340px;
+    font-family: Montserrat;
+    font-size: 0.8em;
+}
+
+#copiar {
+    /*position: absolute;*/
+    font-size: 12px;
+    font-family: Montserrat;
+    color: #8d8c8c;
+    margin: 410px auto;
+    border: 1px solid #dedddd;
+    border-radius: 30px;
+    padding:10px 100px;
+}
+
+#encriptar {
+    font-size: 12px;
+    font-family: Montserrat;
+    color: white;
+    border: 1px solid white;
+    background: #008afd;
+    border-radius: 30px;
+    padding:10px 50px;
+    margin: 10px 5px;
+}
+
+#encriptar:hover {
+    color: #008afd;
+    background: white;
+    border: 1px solid #008afd;
+}
+
+#decifrar {
+    font-size: 12px;
+    font-family: Montserrat;
+    color: #8d8c8c;
+    border: 1px solid #dedddd;
+    border-radius: 30px;
+    padding:10px 50px;
+    margin: 10px 5px;
+}
+
+#decifrar:hover, #copiar:hover {
+    color: #008afd;
+    border: 1px solid #008afd;
+}
