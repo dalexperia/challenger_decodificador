@@ -31,6 +31,7 @@ let encriptar = () => {
         alert('Digite alguma palavra ou texto em minúsculo');
         return null;
     }
+    document.getElementById('limpar').style.display = "inline-block";
     document.getElementById('texto-decodificado').value = " ";
     document.getElementById('anterior').innerHTML = " ";
     copiar.style.display = "block";
@@ -42,6 +43,7 @@ let descriptar = () => {
         alert('Digite alguma palavra ou texto em minúsculo');
         return null;
     }
+    document.getElementById('limpar').style.display = "inline-block";
     const regex = retornarvalores();
     document.getElementById('texto-decodificado').value = " ";
     document.getElementsByClassName('texto-codificado')[0].innerText = result.replace(regex, retornarLetra);
@@ -56,6 +58,14 @@ let copiarTexto = () => {
         .catch(err => {
             console.log('Something went wrong', err);
         })
+}
+
+let apagarTextos = () => {
+    if (texto.value !== ''){
+        document.location.reload(true);
+    } else {
+        alert('Nada para apagar');
+    }
 }
 
 codificar.onclick = encriptar;

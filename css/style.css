@@ -98,6 +98,13 @@
     padding:10px 100px;
 }
 
+#botoes{
+    padding: 10px 10px;
+    text-align: left;
+    width: 600px;
+    margin: 0 auto;
+}
+
 #encriptar {
     font-size: 12px;
     font-family: Montserrat;
@@ -106,7 +113,8 @@
     background: #008afd;
     border-radius: 30px;
     padding:10px 50px;
-    margin: 10px 5px;
+    /*margin: 10px 5px;*/
+    display: inline-block;
 }
 
 #encriptar:hover {
@@ -123,6 +131,24 @@
     border-radius: 30px;
     padding:10px 50px;
     margin: 10px 5px;
+    display: inline-block;
+}
+
+#limpar {
+    font-size: 12px;
+    font-family: Montserrat;
+    color: white;
+    border: 1px solid #dedddd;
+    background: coral;
+    border-radius: 30px;
+    padding:10px 50px;
+    margin: 10px 5px;
+}
+
+#limpar:hover {
+    color: #008afd;
+    background: white;
+    border: 1px solid #008afd;
 }
 
 #decifrar:hover, #copiar:hover {
